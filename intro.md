@@ -1,16 +1,14 @@
-# Welcome to your Jupyter Book
+# Snippets of  
 
-This is a small sample book to give you a feel for how book content is
-structured.
+This is my scrapbook. Could not find a better way to document my learning.
 
 :::{note}
-Here is a note!
+Errors are mine, and am grateful to everyone who will point it out
 :::
 
-And here is a code block:
 
-```
-e = mc^2
-```
+#```
+#e = mc^2
+#```
 
-Check out the content pages bundled with this sample book to see more.
+#Check out the content pages bundled with this sample book to see more.
