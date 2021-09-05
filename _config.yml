@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: My ScrapBook
-author: Subash Poudel
+author: Subash
 logo: sub.png
 
 # Force re-execution of notebooks on each build.
