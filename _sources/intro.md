@@ -1,4 +1,4 @@
-# Peekhole  
+# Scrapbook  
 
 This is a blog (or a scrapbook as I like to call it) with snippets collected from various disciplines e.g. maths, trading etc.
 
