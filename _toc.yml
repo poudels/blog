@@ -7,5 +7,4 @@ parts:
     - caption: Probability
       chapters:
         - file: Horizontally Symmetrical
-	- file: Op-ex returns 
-# - file: markdown
+        - file: OpEx_Returns
