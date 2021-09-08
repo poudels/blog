@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&lt;no title&gt; &#8212; My ScrapBook</title>
+    <title>Standard Error, Margin of Error and Confidence Interval &#8212; My ScrapBook</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -53,6 +53,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Horizontally Symmetrical Time" href="Horizontally%20Symmetrical.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -94,14 +95,14 @@
   Probability
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Horizontally%20Symmetrical.html">
    Horizontally Symmetrical Time
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="OpEx_Returns.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Standard Error, Margin of Error and Confidence Interval
   </a>
  </li>
@@ -146,7 +147,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/Op-ex returns.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/OpEx_Returns.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -166,7 +167,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://poudels.github.io/collection/issues/new?title=Issue%20on%20page%20%2FOp-ex returns.html&body=Your%20issue%20content%20here."><button
+            href="https://poudels.github.io/collection/issues/new?title=Issue%20on%20page%20%2FOpEx_Returns.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -187,14 +188,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -203,12 +196,13 @@
         
               <div>
                 
-  <p>Statement:
+  <div class="section" id="standard-error-margin-of-error-and-confidence-interval">
+<h1>Standard Error, Margin of Error and Confidence Interval<a class="headerlink" href="#standard-error-margin-of-error-and-confidence-interval" title="Permalink to this headline">¶</a></h1>
+<p>Statement:
 Here is a breakdown of SPX rets on the week categorized by the week relative to Opex. Recently 2 weeks prior to Opex (e.g. 7/30/21 to 8/6/21 in this last cycle) has been extremely bullish.</p>
-<p><strong>Questions:</strong></p>
+<p><strong>Question:</strong></p>
 <p>Assume a simple world where returns are i.i.d. normally distributed with 18% annualized volatility.</p>
 <p>What is the standard error of the trailing 3-year average weekly return for each week relative to expiration?</p>
-<p>What is the standard error of the highest- and lowest-return week?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -537,7 +531,11 @@ Therefore the standard error of the trailing 3-year average weekly return = <spa
 <p>The 95% confidence interval for the 2wk_to_opex is [1.71% ± 1.96×0.42%] = [0.89, 2.53]</p>
 <p>Although the margin of error is quite wide (0.82%), the weekly returns of 2 week prior to opex is still substantially greater than the true mean of ~0.23% per week (12% annual returns/52 weeks)</p>
 <hr>
-<p>Inspired by <a class="reference external" href="https://twitter.com/pat_hennessy/status/1428875608046542848">https://twitter.com/pat_hennessy/status/1428875608046542848</a></p>
+**References**
+<ol class="simple">
+<li><p>Inspired by <a class="reference external" href="https://twitter.com/pat_hennessy/status/1428875608046542848">https://twitter.com/pat_hennessy/status/1428875608046542848</a></p></li>
+</ol>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -568,6 +566,15 @@ Therefore the standard error of the trailing 3-year average weekly return = <spa
 
 <div class='prev-next-bottom'>
     
+    <div id="prev">
+        <a class="left-prev" href="Horizontally%20Symmetrical.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Horizontally Symmetrical Time</p>
+            </div>
+        </a>
+    </div>
 
 </div>
         
