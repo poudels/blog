@@ -6,5 +6,6 @@ root: intro
 parts: 
     - caption: Probability
       chapters:
-        - file: Horizontally Symmetrical 
+        - file: Horizontally Symmetrical
+	- file: Op-ex returns 
 # - file: markdown
