@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scrapbook &#8212; My ScrapBook</title>
+    <title>Bash101 &#8212; My ScrapBook</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,7 +51,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Horizontally Symmetrical Time" href="Horizontally%20Symmetrical.html" />
+    <link rel="prev" title="Standard Error, Margin of Error and Confidence Interval" href="OpEx_Returns.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -82,8 +82,8 @@
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 current">
-  <a class="reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
    Scrapbook
   </a>
  </li>
@@ -93,7 +93,7 @@
   Probability
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Horizontally%20Symmetrical.html">
    Horizontally Symmetrical Time
@@ -104,8 +104,8 @@
    Standard Error, Margin of Error and Confidence Interval
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Bash101.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Bash101
   </a>
  </li>
@@ -150,9 +150,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/intro.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/Bash101.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -170,7 +170,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://poudels.github.io/collection/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."><button
+            href="https://poudels.github.io/collection/issues/new?title=Issue%20on%20page%20%2FBash101.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -199,14 +199,126 @@
         
               <div>
                 
-  <div class="section" id="scrapbook">
-<h1>Scrapbook<a class="headerlink" href="#scrapbook" title="Permalink to this headline">¶</a></h1>
-<p>This is a blog (or a scrapbook as I will call it) with snippets collected from various disciplines e.g. maths, trading etc.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Errors are mine, and will be grateful if you will point it out.</p>
+  <div class="section" id="bash101">
+<h1>Bash101<a class="headerlink" href="#bash101" title="Permalink to this headline">¶</a></h1>
+<p><strong>Invoke bash to run the file</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ch">#! /bin/bash</span>
+</pre></div>
 </div>
-<div class="toctree-wrapper compound">
+<p><strong>Hello World</strong></p>
+<ul class="simple">
+<li><p>Print Hello World</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">echo</span> <span class="n">Hello</span> <span class="n">World</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Function to print Hello World</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">function</span> <span class="n">intro</span> <span class="p">{</span>
+    <span class="n">echo</span> <span class="n">Hello</span> <span class="n">World</span>
+<span class="p">}</span>
+<span class="n">intro</span> 
+</pre></div>
+</div>
+<p><strong>Variables</strong></p>
+<p>Create two variables called variable1 and variable2</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">variable1</span><span class="o">=</span><span class="s2">&quot;SUBASH&quot;</span>
+<span class="n">variable2</span><span class="o">=</span><span class="n">SUBASH</span>
+</pre></div>
+</div>
+<p>Check the variables that were just created</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>echo $variable1 $variable2 
+</pre></div>
+</div>
+<p>variable1 was enclosed between two strings, but variable2 wasn’t. But are they same?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>if [ $variable1 == $variable2 ]; 
+then 
+    echo True
+else
+    echo False 
+</pre></div>
+</div>
+<p>They are indeed the same.</p>
+<p><strong>String Replacement</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>echo What is your name? 
+read NAME
+echo Hi $NAME! How are you?
+</pre></div>
+</div>
+<p><strong>Conditionals</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">[</span> <span class="s2">&quot;foo&quot;</span> <span class="o">=</span> <span class="s2">&quot;foo&quot;</span> <span class="p">];</span> 
+<span class="n">then</span>
+    <span class="n">echo</span> <span class="s2">&quot;true&quot;</span>
+<span class="k">else</span> 
+    <span class="n">echo</span> <span class="s2">&quot;False&quot;</span>
+<span class="n">fi</span>
+</pre></div>
+</div>
+<p><strong>Functions</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">function</span> <span class="n">helloUser</span> <span class="p">{</span>
+    <span class="n">echo</span> <span class="s2">&quot;What is your name?&quot;</span>
+    <span class="n">read</span> <span class="n">Name</span>
+    <span class="n">echo</span> <span class="s2">&quot;Hello $Name, how are you?&quot;</span>
+<span class="p">}</span>
+
+<span class="n">function</span> <span class="n">helloUser2</span> <span class="p">{</span>
+    <span class="n">echo</span> <span class="s2">&quot;Hello $1, how are you?&quot;</span>
+<span class="p">}</span>
+
+
+<span class="n">helloUser</span>
+
+<span class="n">helloUser2</span> <span class="n">Subash</span>
+
+</pre></div>
+</div>
+<p><strong>Pipe</strong></p>
+<p>Pipe is a “function” that takes the output of the command on the left of the pipe, and pass it as an input to the command on the right of the pipe.
+This is very similar to lambda function in python.</p>
+<p>Say we want to take a phrase “hello world” and change it to “hello earth”, this is one way to do it</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">echo</span> <span class="n">Hello</span> <span class="n">World</span> <span class="o">|</span> <span class="n">sed</span> <span class="s1">&#39;s/World/Earth/&#39;</span>
+</pre></div>
+</div>
+<p>Say we want to search for a file ending with .txt in the current directory.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">|</span> <span class="n">grep</span> <span class="s2">&quot;.txt&quot;</span>
+</pre></div>
+</div>
+<p><strong>Sed (Stream EDitor) commands</strong></p>
+<p><strong>Select certain lines from a file</strong></p>
+<p>Select lines 2 to 4 from file sed.txt</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sed</span> <span class="o">-</span><span class="n">n</span> <span class="s1">&#39;2,4p&#39;</span> <span class="n">sed</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>Select lines 2 to 4 and 6 to 8 from file sed.txt</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sed</span> <span class="o">-</span><span class="n">n</span> <span class="o">-</span><span class="n">e</span> <span class="s1">&#39;2,4p&#39;</span> <span class="o">-</span><span class="n">e</span> <span class="s1">&#39;6,8p&#39;</span> <span class="n">sed</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>Select lines containing certain characters from file sed.txt</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sed</span> <span class="o">-</span><span class="n">n</span> <span class="s1">&#39;/^AB/p&#39;</span> <span class="n">sed</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p><strong>Replace characters in a file</strong></p>
+<p>Replace AB at the beginning of the line with xxx.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sed</span> <span class="o">-</span><span class="n">n</span> <span class="s1">&#39;s/^AB/xxx/gp&#39;</span> <span class="n">sed</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>Replace all the A’s or a’s with xxx.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sed</span> <span class="o">-</span><span class="n">n</span> <span class="s1">&#39;s/[^Aa]/xxx/gp&#39;</span> <span class="n">sed</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p><strong>Search for a .txt file in the current directory</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">l</span> <span class="o">|</span> <span class="n">grep</span> <span class="s2">&quot;\.txt$&quot;</span>
+</pre></div>
+</div>
+<p><strong>Create a variable (or a file name) that changes everyday</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>FILE=log_$(date +%Y%m%d).txt
+echo $FILE
+</pre></div>
+</div>
+<p><strong>Get Current Directory</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PWD</span>
+</pre></div>
 </div>
 </div>
 
@@ -239,15 +351,15 @@
 
 <div class='prev-next-bottom'>
     
-     <div id="next">
-        <a class="right-next" href="Horizontally%20Symmetrical.html" title="next page">
+    <div id="prev">
+        <a class="left-prev" href="OpEx_Returns.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Horizontally Symmetrical Time</p>
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Standard Error, Margin of Error and Confidence Interval</p>
             </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
         </a>
-     </div>
+    </div>
 
 </div>
         
