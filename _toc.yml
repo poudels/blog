@@ -8,3 +8,4 @@ parts:
       chapters:
         - file: Horizontally Symmetrical
         - file: OpEx_Returns
+        - file: Bash101
