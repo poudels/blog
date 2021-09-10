@@ -3,9 +3,12 @@
 
 format: jb-book
 root: intro
-parts: 
-    - caption: Probability
-      chapters:
-        - file: Horizontally Symmetrical
-        - file: OpEx_Returns
-        - file: Bash101
+parts:
+- caption: Probability 
+  chapters:
+  - file: Horizontally Symmetrical
+  - file: OpEx_Returns
+- caption: Programming
+  chapters:
+  - file: Bash101
+  - file: pythonInterview
