@@ -21,7 +21,7 @@ jobs:
       main: 'main.js'
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     # Install dependencies
     - name: Set up Python 3.7
